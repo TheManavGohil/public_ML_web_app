@@ -60,7 +60,7 @@ if(selected == 'Diabities Prediction'):
     
     #creating button for prwediction
     if st.button('Diabities test Result'):
-        diab_prediction = heart_diseases_modell.predict([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI,DiabetesPedigreeFunction, Age]])
+        diab_prediction = diabities_model.predict([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI,DiabetesPedigreeFunction, Age]])
         
         if(diab_prediction[0] == 1):
             diabities_diagnosis = 'The person is Diabitic'
@@ -111,7 +111,7 @@ if(selected == 'Heart Diseases Prediction'):
     if st.button('heart test Result'):
         heart_prediction = heart_diseases_model.predict([[age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal]])
         
-        if(diab_prediction[0] == 1):
+        if(heart_prediction[0] == 1):
             heart_diagnosis = 'The person has heart diseases'
         else:
             heart_diagnosis = 'The person does not have heart diseases'
@@ -180,7 +180,7 @@ if(selected == 'Parkisaons Prediction'):
         parki_prediction = parkinsons_modle.predict([[MDVP_FoHz,MDVP_FhiHz,MDVP_FloHz,MDVP_Jitter_,MDVP_Jitter_Abs,MDVP_RAP,MDVP_PPQ,Jitter_DDP,MDVP_Shimmer,MDVP_ShimmerdB,Shimmer_APQ3,Shimmer_APQ5, MDVP_APQ,Shimme_DDA,NHR,HNRR,RPDE,DFAR,spread1,spread2,D2R,PPER]])
         
         if(parki_prediction[0] == 1):
-            parkin_diagnosiss = 'The person has heart diseases'
+            parkin_diagnosis = 'The person has heart diseases'
         else:
             parkin_diagnosis = 'The person does not have heart diseases'
             
