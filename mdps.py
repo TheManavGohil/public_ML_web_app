@@ -121,7 +121,7 @@ if(selected == 'Heart Diseases Prediction'):
                             
     
 if(selected == 'Parkisaons Prediction'):
-    
+	
     #page title
     st.title('Parkisaons Prediction using ML')
     
@@ -175,25 +175,25 @@ if(selected == 'Parkisaons Prediction'):
     #code for prediction
     parkin_diagnosis = ''
     
-    #creating button for prwediction
-    # if st.button('Parkinson's test Result'):
-    #     parki_prediction = parkinsons_modle.predict([[MDVP_FoHz,MDVP_FhiHz,MDVP_FloHz,MDVP_Jitter_,MDVP_Jitter_Abs,MDVP_RAP,MDVP_PPQ,Jitter_DDP,MDVP_Shimmer,MDVP_ShimmerdB,Shimmer_APQ3,Shimmer_APQ5, MDVP_APQ,Shimme_DDA,NHR,HNRR,RPDE,DFAR,spread1,spread2,D2R,PPER]])
+    creating button for prwediction
+    if st.button('Parkinsons test Result'):
+        parki_prediction = parkinsons_modle.predict([[MDVP_FoHz,MDVP_FhiHz,MDVP_FloHz,MDVP_Jitter_,MDVP_Jitter_Abs,MDVP_RAP,MDVP_PPQ,Jitter_DDP,MDVP_Shimmer,MDVP_ShimmerdB,Shimmer_APQ3,Shimmer_APQ5, MDVP_APQ,Shimme_DDA,NHR,HNRR,RPDE,DFAR,spread1,spread2,D2R,PPER]])
         
-    #     if(parki_prediction[0] == 1):
-    #         parkin_diagnosis = 'The person has heart diseases'
-    #     else:
-    #         parkin_diagnosis = 'The person does not have heart diseases'
+        if(parki_prediction[0] == 1):
+            parkin_diagnosis = 'The person has heart diseases'
+        else:
+            parkin_diagnosis = 'The person does not have heart diseases'
             
-    # st.success(parkin_diagnosis)
+    st.success(parkin_diagnosis)
 
-    if st.button('Parkinson test Result'):
-		parki_prediction = parkinsons_modle.predict([[MDVP_FoHz,MDVP_FhiHz,MDVP_FloHz,MDVP_Jitter_,MDVP_Jitter_Abs,MDVP_RAP,MDVP_PPQ,Jitter_DDP,MDVP_Shimmer,MDVP_ShimmerdB,Shimmer_APQ3,Shimmer_APQ5, MDVP_APQ,Shimme_DDA,NHR,HNRR,RPDE,DFAR,spread1,spread2,D2R,PPER]])
+#     if st.button('Parkinson test Result'):
+# 	parki_prediction = parkinsons_modle.predict([[MDVP_FoHz,MDVP_FhiHz,MDVP_FloHz,MDVP_Jitter_,MDVP_Jitter_Abs,MDVP_RAP,MDVP_PPQ,Jitter_DDP,MDVP_Shimmer,MDVP_ShimmerdB,Shimmer_APQ3,Shimmer_APQ5, MDVP_APQ,Shimme_DDA,NHR,HNRR,RPDE,DFAR,spread1,spread2,D2R,PPER]])
 
-  		if parki_prediction[0] == 1:
-			parkin_diagnosis = 'The person has Parkinson diseases'
-   		else:
-	 		parkin_diagnosis = 'The person does not have Parkinson diseases'
-	st.success(parkin_diagnosis)
+#   	if parki_prediction[0] == 1:
+# 		parkin_diagnosis = 'The person has Parkinson diseases'
+#    	else:
+# 	 	parkin_diagnosis = 'The person does not have Parkinson diseases'
+# st.success(parkin_diagnosis)
 	
     
 
