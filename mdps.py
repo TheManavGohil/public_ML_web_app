@@ -185,4 +185,3 @@ if(selected == 'Parkisaons Prediction'):
             parkin_diagnosis = 'The person does not have heart diseases'
             
     st.success(parkin_diagnosis)
-   s
