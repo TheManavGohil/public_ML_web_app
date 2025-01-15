@@ -1,0 +1,1 @@
+his repository hosts a Machine Learning Web Application built to demonstrate ML model deployment using user-friendly interfaces. The app allows users to interact with a pre-trained ML model and visualize results directly through their browsers.
